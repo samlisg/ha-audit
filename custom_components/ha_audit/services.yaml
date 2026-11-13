@@ -1,0 +1,3 @@
+run:
+  name: Run audit
+  description: Run a full HA Audit now (read-only). The result appears in the HA Audit panel and sensors.

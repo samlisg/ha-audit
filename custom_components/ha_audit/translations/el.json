@@ -1,0 +1,42 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "HA Audit",
+        "description": "Audit μόνο-ανάγνωσης: άχρηστα entities, HACS, σπασμένες αναφορές κ.ά. Τίποτα δεν αλλάζει και τίποτα δεν διαγράφεται. Vibe coded με βοήθεια AI — έλεγξε τα ευρήματα πριν καθαρίσεις.",
+        "data": {
+          "interval_days": "Αυτόματο τρέξιμο κάθε N ημέρες (0 = μόνο χειροκίνητα)",
+          "stale_days": "Σήμανση automations / entities που δεν κινήθηκαν για N ημέρες",
+          "unavail_days": "Σήμανση entities unavailable για N ημέρες",
+          "analyze_db": "Ανάλυση της βάσης recorder (μόνο ανάγνωση)",
+          "include_diagnostic": "Συμπερίληψη diagnostic/config entities στα orphans",
+          "notify": "Ειδοποίηση όταν εμφανίζονται νέα ευρήματα"
+        }
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Το HA Audit είναι ήδη ρυθμισμένο."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Ρυθμίσεις HA Audit",
+        "data": {
+          "interval_days": "Αυτόματο τρέξιμο κάθε N ημέρες (0 = μόνο χειροκίνητα)",
+          "stale_days": "Σήμανση automations / entities που δεν κινήθηκαν για N ημέρες",
+          "unavail_days": "Σήμανση entities unavailable για N ημέρες",
+          "analyze_db": "Ανάλυση της βάσης recorder (μόνο ανάγνωση)",
+          "include_diagnostic": "Συμπερίληψη diagnostic/config entities στα orphans",
+          "notify": "Ειδοποίηση όταν εμφανίζονται νέα ευρήματα"
+        }
+      }
+    }
+  },
+  "services": {
+    "run": {
+      "name": "Εκτέλεση audit",
+      "description": "Τρέχει πλήρες HA Audit τώρα (μόνο ανάγνωση)."
+    }
+  }
+}

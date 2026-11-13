@@ -1,0 +1,24 @@
+{
+  "domain": "ha_audit",
+  "name": "HA Audit",
+  "categories": [
+    "computers_network.monitoring"
+  ],
+  "codeowners": [
+    "@samlisg"
+  ],
+  "config_flow": true,
+  "dependencies": [
+    "http",
+    "frontend",
+    "panel_custom",
+    "websocket_api"
+  ],
+  "documentation": "https://github.com/samlisg/ha-audit",
+  "integration_type": "service",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/samlisg/ha-audit/issues",
+  "requirements": [],
+  "single_config_entry": true,
+  "version": "1.0.0"
+}

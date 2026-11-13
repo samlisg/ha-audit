@@ -1,0 +1,40 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "HA Audit",
+        "description": "Read-only audit of unused entities, HACS items, broken references and more. Nothing is ever changed or deleted. Vibe coded with AI assistance — review findings before cleaning up.",
+        "data": {
+          "interval_days": "Run automatically every N days (0 = manual only)",
+          "stale_days": "Flag automations / entities silent for N days",
+          "unavail_days": "Flag entities unavailable for N days",
+          "analyze_db": "Analyse the recorder database (read-only)",
+          "include_diagnostic": "Include diagnostic/config entities in the orphan list",
+          "notify": "Persistent notification when new findings appear"
+        }
+      }
+    },
+    "abort": { "single_instance_allowed": "HA Audit is already set up." }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "HA Audit options",
+        "data": {
+          "interval_days": "Run automatically every N days (0 = manual only)",
+          "stale_days": "Flag automations / entities silent for N days",
+          "unavail_days": "Flag entities unavailable for N days",
+          "analyze_db": "Analyse the recorder database (read-only)",
+          "include_diagnostic": "Include diagnostic/config entities in the orphan list",
+          "notify": "Persistent notification when new findings appear"
+        }
+      }
+    }
+  },
+  "services": {
+    "run": {
+      "name": "Run audit",
+      "description": "Run a full HA Audit now (read-only)."
+    }
+  }
+}

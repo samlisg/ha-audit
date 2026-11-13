@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+.DS_Store
+# never commit reports or tokens
+ha_audit_report.*
+ha_audit_state.json
+*.token
